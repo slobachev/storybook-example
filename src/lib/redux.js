@@ -2,11 +2,11 @@ import { createStore } from "redux";
 
 export const actions = {
     ARCHIVE_TASK: 'ARCHIVE_TASK',
-    RUN_TASK: 'RUN_TASK'
+    PIN_TASK: 'PIN_TASK'
 };
 
 export const archiveTask = id => ({type: 'ARCHIVE_TASK', id});
-export const runTask = id => ({type: 'RUN_TASK', id});
+export const pinTask = id => ({type: 'PIN_TASK', id});
 
 function taskStateReducer(taskState) {
     return (state, action) => {
